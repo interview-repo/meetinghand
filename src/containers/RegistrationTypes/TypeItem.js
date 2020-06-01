@@ -1,7 +1,7 @@
 import React from "react";
 import { Radio, IconButton } from "evergreen-ui";
 
-const TypeItem = ({ props, setType, active = false, resetType=false }) => {
+const TypeItem = ({ props, setType, active = false, resetType = false }) => {
   return (
     <React.Fragment>
       <label className={`item ${active ? "selected" : ""}`}>
@@ -22,7 +22,10 @@ const TypeItem = ({ props, setType, active = false, resetType=false }) => {
               className="edit"
               icon="edit"
               height={40}
-              onClick={() => {setType(false); resetType()}}
+              onClick={() => {
+                setType(false);
+                resetType();
+              }}
             />
           )}
         </div>

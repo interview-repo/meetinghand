@@ -1,4 +1,3 @@
-
 export const titleCase = (str) => {
   var splitStr = str.toLowerCase().split(" ");
   for (var i = 0; i < splitStr.length; i++) {
@@ -7,6 +6,3 @@ export const titleCase = (str) => {
   }
   return splitStr.join(" ");
 };
-
-
-

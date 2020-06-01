@@ -23,22 +23,24 @@ const App = styled.div`
     padding-bottom: 25px;
     div {
       display: flex;
-      label {margin-right: 50px;}
+      label {
+        margin-right: 50px;
+      }
     }
-}
+  }
 
   .total {
-      text-align: right;
-      font-size: 1.4em;
-    }
+    text-align: right;
+    font-size: 1.4em;
+  }
 
-    .total span {
-        display: block;
-    }
+  .total span {
+    display: block;
+  }
 
-    .total strong {
-        color: #ff7944;
-    }
+  .total strong {
+    color: #ff7944;
+  }
 `;
 
 const EventHeaderBox = styled.div`
@@ -114,20 +116,20 @@ const UserItemStyle = styled.div`
   }
 
   .user-box {
-      margin-bottom: 25px;
-      h5 {
-        color: #808080;
-        border-bottom: 1px solid #dadada;
-        padding-bottom: 5px;
-     }
-     .user-edit-icon {
-        float: left;
-        color: #092c58;
-        background-color: #9bc9ea;
-        border-radius: 2px;
-        padding: 5px;
-        margin-right: 10px;
-        cursor: pointer;
+    margin-bottom: 25px;
+    h5 {
+      color: #808080;
+      border-bottom: 1px solid #dadada;
+      padding-bottom: 5px;
+    }
+    .user-edit-icon {
+      float: left;
+      color: #092c58;
+      background-color: #9bc9ea;
+      border-radius: 2px;
+      padding: 5px;
+      margin-right: 10px;
+      cursor: pointer;
     }
     .additional-services.user-box li {
       display: block;
@@ -143,10 +145,10 @@ const UserItemStyle = styled.div`
       cursor: pointer;
       margin-left: -30px;
     }
-     span.price {
+    span.price {
       float: right;
       font-weight: 600;
-     }
+    }
   }
 
   .card {
@@ -315,13 +317,7 @@ const WorkshopPage = styled.div`
   }
 `;
 
-const RegistrationSummaryPage = styled.div`
-  
-
-`;
-
-
-
+const RegistrationSummaryPage = styled.div``;
 
 export {
   Button,

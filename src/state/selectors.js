@@ -4,8 +4,6 @@ import moment from "moment";
 import country from "country-js";
 import { titleCase } from "../utils/functions";
 
-
-
 export const getEventData = selector({
   key: "EventData",
   get: async ({ get }) => {

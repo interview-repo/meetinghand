@@ -15,7 +15,6 @@ export const userListState = atom({
   default: [],
 });
 
-
 export const stepState = atom({
   key: "stepState",
   default: 1,

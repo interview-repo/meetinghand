@@ -13,7 +13,6 @@ const WorkShopItem = ({ props }) => {
     });
   };
 
-
   return (
     <React.Fragment>
       <div className="workshop-item card">
