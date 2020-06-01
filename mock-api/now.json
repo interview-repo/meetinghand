@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/get-event",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/save-ticket",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "event_long_name": "Vue Conf TR",
+            "event_start_date": "2020-06-12",
+            "event_end_date": "2020-06-16",
+            "event_currency": "USD",
+            "event_date_format": "MM.DD.YYYY",
+            "venue": {
+                "event_venue_title": "CoZone",
+                "event_venue_country": "TR",
+                "event_venue_state": "",
+                "event_venue_city": "Ankara",
+                "event_venue_zip": "06510",
+                "event_venue_address": ""
+            },
+            "registration_types": [
+                {
+                    "event_registration_type_id": 2886,
+                    "event_registration_type_title": "Student",
+                    "event_registration_type_price": 30
+                },
+                {
+                    "event_registration_type_id": 2887,
+                    "event_registration_type_title": "Regular",
+                    "event_registration_type_price": 45
+                }
+            ],
+            "workshops": [
+                {
+                    "event_workshop_id": 1549,
+                    "event_workshop_title": "Deep Dive with Vue3",
+                    "event_workshop_price": 50
+                }
+            ]
+        }
+    ],
+    "required": [
+        "event_long_name",
+        "event_start_date",
+        "event_end_date",
+        "event_currency",
+        "event_date_format",
+        "venue",
+        "registration_types",
+        "workshops"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "event_long_name": {
+            "$id": "#/properties/event_long_name",
+            "type": "string",
+            "title": "The event_long_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Vue Conf TR"
+            ]
+        },
+        "event_start_date": {
+            "$id": "#/properties/event_start_date",
+            "type": "string",
+            "title": "The event_start_date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-06-12"
+            ]
+        },
+        "event_end_date": {
+            "$id": "#/properties/event_end_date",
+            "type": "string",
+            "title": "The event_end_date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-06-16"
+            ]
+        },
+        "event_currency": {
+            "$id": "#/properties/event_currency",
+            "type": "string",
+            "title": "The event_currency schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "USD"
+            ]
+        },
+        "event_date_format": {
+            "$id": "#/properties/event_date_format",
+            "type": "string",
+            "title": "The event_date_format schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MM.DD.YYYY"
+            ]
+        },
+        "venue": {
+            "$id": "#/properties/venue",
+            "type": "object",
+            "title": "The venue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "event_venue_title": "CoZone",
+                    "event_venue_country": "TR",
+                    "event_venue_state": "",
+                    "event_venue_city": "Ankara",
+                    "event_venue_zip": "06510",
+                    "event_venue_address": ""
+                }
+            ],
+            "required": [
+                "event_venue_title",
+                "event_venue_country",
+                "event_venue_state",
+                "event_venue_city",
+                "event_venue_zip",
+                "event_venue_address"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "event_venue_title": {
+                    "$id": "#/properties/venue/properties/event_venue_title",
+                    "type": "string",
+                    "title": "The event_venue_title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "CoZone"
+                    ]
+                },
+                "event_venue_country": {
+                    "$id": "#/properties/venue/properties/event_venue_country",
+                    "type": "string",
+                    "title": "The event_venue_country schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TR"
+                    ]
+                },
+                "event_venue_state": {
+                    "$id": "#/properties/venue/properties/event_venue_state",
+                    "type": "string",
+                    "title": "The event_venue_state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "event_venue_city": {
+                    "$id": "#/properties/venue/properties/event_venue_city",
+                    "type": "string",
+                    "title": "The event_venue_city schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Ankara"
+                    ]
+                },
+                "event_venue_zip": {
+                    "$id": "#/properties/venue/properties/event_venue_zip",
+                    "type": "string",
+                    "title": "The event_venue_zip schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "06510"
+                    ]
+                },
+                "event_venue_address": {
+                    "$id": "#/properties/venue/properties/event_venue_address",
+                    "type": "string",
+                    "title": "The event_venue_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                }
+            }
+        },
+        "registration_types": {
+            "$id": "#/properties/registration_types",
+            "type": "array",
+            "title": "The registration_types schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "event_registration_type_id": 2886,
+                        "event_registration_type_title": "Student",
+                        "event_registration_type_price": 30
+                    },
+                    {
+                        "event_registration_type_id": 2887,
+                        "event_registration_type_title": "Regular",
+                        "event_registration_type_price": 45
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/registration_types/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "event_registration_type_id": 2886,
+                                "event_registration_type_title": "Student",
+                                "event_registration_type_price": 30
+                            }
+                        ],
+                        "required": [
+                            "event_registration_type_id",
+                            "event_registration_type_title",
+                            "event_registration_type_price"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "event_registration_type_id": {
+                                "$id": "#/properties/registration_types/items/anyOf/0/properties/event_registration_type_id",
+                                "type": "integer",
+                                "title": "The event_registration_type_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2886
+                                ]
+                            },
+                            "event_registration_type_title": {
+                                "$id": "#/properties/registration_types/items/anyOf/0/properties/event_registration_type_title",
+                                "type": "string",
+                                "title": "The event_registration_type_title schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Student"
+                                ]
+                            },
+                            "event_registration_type_price": {
+                                "$id": "#/properties/registration_types/items/anyOf/0/properties/event_registration_type_price",
+                                "type": "integer",
+                                "title": "The event_registration_type_price schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    30
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/registration_types/items"
+            }
+        },
+        "workshops": {
+            "$id": "#/properties/workshops",
+            "type": "array",
+            "title": "The workshops schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "event_workshop_id": 1549,
+                        "event_workshop_title": "Deep Dive with Vue3",
+                        "event_workshop_price": 50
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/workshops/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "event_workshop_id": 1549,
+                                "event_workshop_title": "Deep Dive with Vue3",
+                                "event_workshop_price": 50
+                            }
+                        ],
+                        "required": [
+                            "event_workshop_id",
+                            "event_workshop_title",
+                            "event_workshop_price"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "event_workshop_id": {
+                                "$id": "#/properties/workshops/items/anyOf/0/properties/event_workshop_id",
+                                "type": "integer",
+                                "title": "The event_workshop_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1549
+                                ]
+                            },
+                            "event_workshop_title": {
+                                "$id": "#/properties/workshops/items/anyOf/0/properties/event_workshop_title",
+                                "type": "string",
+                                "title": "The event_workshop_title schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Deep Dive with Vue3"
+                                ]
+                            },
+                            "event_workshop_price": {
+                                "$id": "#/properties/workshops/items/anyOf/0/properties/event_workshop_price",
+                                "type": "integer",
+                                "title": "The event_workshop_price schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    50
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/workshops/items"
+            }
+        }
+    }
+}

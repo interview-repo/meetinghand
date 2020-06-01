@@ -1,0 +1,251 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "registrations": [
+                {
+                    "event_registration_firstname": "Fatih Sinan",
+                    "event_registration_lastname": "Yaman",
+                    "event_registration_email": "sinan@meetinghand.com",
+                    "event_registration_type_id": 2887,
+                    "event_registration_type_price": 45.0,
+                    "workshops": [
+                        {
+                            "event_workshop_id": 1549,
+                            "event_workshop_price": 50.0
+                        },
+                        {
+                            "event_workshop_id": 1549,
+                            "event_workshop_price": 50.0
+                        }
+                    ]
+                },
+                {
+                    "event_registration_firstname": "Gaye",
+                    "event_registration_lastname": "Yaman",
+                    "event_registration_email": "gaye@meetinghand.com",
+                    "event_registration_type_id": 2888,
+                    "event_registration_type_price": 30.0,
+                    "workshops": []
+                }
+            ],
+            "total_amount": 175.0
+        }
+    ],
+    "required": [
+        "registrations",
+        "total_amount"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "registrations": {
+            "$id": "#/properties/registrations",
+            "type": "array",
+            "title": "The registrations schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "event_registration_firstname": "Fatih Sinan",
+                        "event_registration_lastname": "Yaman",
+                        "event_registration_email": "sinan@meetinghand.com",
+                        "event_registration_type_id": 2887,
+                        "event_registration_type_price": 45.0,
+                        "workshops": [
+                            {
+                                "event_workshop_id": 1549,
+                                "event_workshop_price": 50.0
+                            },
+                            {
+                                "event_workshop_id": 1549,
+                                "event_workshop_price": 50.0
+                            }
+                        ]
+                    },
+                    {
+                        "event_registration_firstname": "Gaye",
+                        "event_registration_lastname": "Yaman",
+                        "event_registration_email": "gaye@meetinghand.com",
+                        "event_registration_type_id": 2888,
+                        "event_registration_type_price": 30.0,
+                        "workshops": []
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/registrations/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "event_registration_firstname": "Fatih Sinan",
+                                "event_registration_lastname": "Yaman",
+                                "event_registration_email": "sinan@meetinghand.com",
+                                "event_registration_type_id": 2887,
+                                "event_registration_type_price": 45.0,
+                                "workshops": [
+                                    {
+                                        "event_workshop_id": 1549,
+                                        "event_workshop_price": 50.0
+                                    },
+                                    {
+                                        "event_workshop_id": 1549,
+                                        "event_workshop_price": 50.0
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "event_registration_firstname",
+                            "event_registration_lastname",
+                            "event_registration_email",
+                            "event_registration_type_id",
+                            "event_registration_type_price",
+                            "workshops"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "event_registration_firstname": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/event_registration_firstname",
+                                "type": "string",
+                                "title": "The event_registration_firstname schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Fatih Sinan"
+                                ]
+                            },
+                            "event_registration_lastname": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/event_registration_lastname",
+                                "type": "string",
+                                "title": "The event_registration_lastname schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Yaman"
+                                ]
+                            },
+                            "event_registration_email": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/event_registration_email",
+                                "type": "string",
+                                "title": "The event_registration_email schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "sinan@meetinghand.com"
+                                ]
+                            },
+                            "event_registration_type_id": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/event_registration_type_id",
+                                "type": "integer",
+                                "title": "The event_registration_type_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2887
+                                ]
+                            },
+                            "event_registration_type_price": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/event_registration_type_price",
+                                "type": "number",
+                                "title": "The event_registration_type_price schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    45.0
+                                ]
+                            },
+                            "workshops": {
+                                "$id": "#/properties/registrations/items/anyOf/0/properties/workshops",
+                                "type": "array",
+                                "title": "The workshops schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "event_workshop_id": 1549,
+                                            "event_workshop_price": 50.0
+                                        },
+                                        {
+                                            "event_workshop_id": 1549,
+                                            "event_workshop_price": 50.0
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/registrations/items/anyOf/0/properties/workshops/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "event_workshop_id": 1549,
+                                                    "event_workshop_price": 50.0
+                                                }
+                                            ],
+                                            "required": [
+                                                "event_workshop_id",
+                                                "event_workshop_price"
+                                            ],
+                                            "additionalProperties": true,
+                                            "properties": {
+                                                "event_workshop_id": {
+                                                    "$id": "#/properties/registrations/items/anyOf/0/properties/workshops/items/anyOf/0/properties/event_workshop_id",
+                                                    "type": "integer",
+                                                    "title": "The event_workshop_id schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        1549
+                                                    ]
+                                                },
+                                                "event_workshop_price": {
+                                                    "$id": "#/properties/registrations/items/anyOf/0/properties/workshops/items/anyOf/0/properties/event_workshop_price",
+                                                    "type": "number",
+                                                    "title": "The event_workshop_price schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0.0,
+                                                    "examples": [
+                                                        50.0
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "$id": "#/properties/registrations/items/anyOf/0/properties/workshops/items"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/registrations/items"
+            }
+        },
+        "total_amount": {
+            "$id": "#/properties/total_amount",
+            "type": "number",
+            "title": "The total_amount schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                175.0
+            ]
+        }
+    }
+}
