@@ -7,7 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "bulma": "^0.8.2",
+    "bulma": "^0.9.3",
     "country-js": "0.0.9",
     "currency-symbol-map": "^4.0.4",
     "email-validator": "^2.0.4",
