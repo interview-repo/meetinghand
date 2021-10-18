@@ -11,7 +11,7 @@
     "country-js": "0.0.9",
     "currency-symbol-map": "^4.0.4",
     "email-validator": "^2.0.4",
-    "evergreen-ui": "^4.27.4",
+    "evergreen-ui": "^6.5.1",
     "moment": "^2.26.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
