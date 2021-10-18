@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bulma": "^0.8.2",
     "country-js": "0.0.9",
-    "currency-symbol-map": "^4.0.4",
+    "currency-symbol-map": "^5.0.1",
     "email-validator": "^2.0.4",
     "evergreen-ui": "^4.27.4",
     "moment": "^2.26.0",
